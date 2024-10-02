@@ -5,8 +5,23 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <meta name="author" content="Dr. Eleanor Gaye">
 </head>
+<style>
+    .sender-column {
+        float: left;
+        width: 40%;
+    }
+    .receiver-column {
+        float: left;
+        width: 60%;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
 <body>
-    
+    <div class="sender-column">
         <address>
             <strong>Dr. Eleanor Gaye</strong><br>
             Awesome Science faculty<br>
@@ -16,14 +31,15 @@
             <strong>Tel:</strong> <a href="tel:1234567890">123-456-7890</a><br>
             <strong>Email:</strong> <a href="mailto:no_reply@example.com">no_reply@example.com</a>
         </address>
-
+    </div>
+    <div class="receiver-column">
         <address>
             <strong>Miss Eileen Dover</strong><br>
             4321 Cliff Top Edge<br>
             Dover, CT9 XXX<br>
             UK
         </address>
-    
+    </div>
 
     <p><time datetime="2016-01-20">20 January 2016</time></p>
 
